@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+nav{
+    min-height: 9vh;
+    padding: 5px;
+    border-radius:0px 0px 20px 20px;
+    box-shadow: 0px -4px 10px black;
+    display: flex;
+    align-items: center;
+}
+nav h1.logo{
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    background: linear-gradient(to right,#18CFFF,#B205FF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: xx-large;
+}
+h2.game-name{
+    font-size: x-large;
+    padding: 10px 0px;
+    margin: 20px 25px;
+    font-weight: 400;
+}
+.game-modes{
+    padding: 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mode-button{
+    padding: 5px 15px;
+    color: white;
+    margin:0px 20px 0px 0px;
+    background: linear-gradient(to right,#18CFFF,#B205FF);
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+    font-weight: 600;
+}
+.mode-button:hover{
+
+}
+.mode-button:active{
+    box-shadow:inset 0px 0px 3px rgb(83, 83, 83);
+}
+.game-div{
+    margin:40px 10px 10px 10px;
+    background: linear-gradient(to right,#18CFFF,#B205FF);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 10vh;
+}
+.game-unit{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+.tic-tac-toe-3x3{
+    /* width: 60%; */
+    border:2px solid black;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw;
+
+    /* grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 20vw 20vw 20vw; */
+    
+    /* grid-template-columns: 30vh 30vh 30vh;
+    grid-template-rows: 30vh 30vh 30vh; */
+    gap: 3px;
+}
+@media screen and (max-width:550px) {
+    .tic-tac-toe-3x3{
+        gap:8px;
+    }
+}
+@media screen and (max-width:510px) {
+    .tic-tac-toe-3x3{
+        gap:12px;
+    }
+}
+.box{
+    padding: 50px;
+    background-color: white;
+}
+#box1{
+    border-top-left-radius:7px;
+}
+#box3{
+    border-top-right-radius:7px;
+}
+#box7{
+    border-bottom-left-radius:7px;
+}
+#box9{
+    border-bottom-right-radius:7px;
+}
+.box{
+    
+}
+.game-info-board{
+    width: 40%;
+    /* border: 2px solid blue; */
+}
+
