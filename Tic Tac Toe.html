@@ -24,18 +24,52 @@
             <div class="game-div">
                 <div class="game-unit">
                     <div class="tic-tac-toe-3x3">
-                        <div class="box" id="box1">1</div>
-                        <div class="box" id="box2">2</div>
-                        <div class="box" id="box3">3</div>
-                        <div class="box" id="box4">4</div>
-                        <div class="box" id="box5">5</div>
-                        <div class="box" id="box6">6</div>
-                        <div class="box" id="box7">7</div>
-                        <div class="box" id="box8">8</div>
-                        <div class="box" id="box9">9</div>
+                        <img src="./images/blank.png" class="box" id="box1"/>
+                        <img src="./images/blank.png" class="box" id="box2"/>
+                        <img src="./images/blank.png" class="box" id="box3"/>
+                        <img src="./images/blank.png" class="box" id="box4"/>
+                        <img src="./images/blank.png" class="box" id="box5"/>
+                        <img src="./images/blank.png" class="box" id="box6"/>
+                        <img src="./images/blank.png" class="box" id="box7"/>
+                        <img src="./images/blank.png" class="box" id="box8"/>
+                        <img src="./images/blank.png" class="box" id="box9"/>
                     </div>
-                    <div class="game-info-board">
-                        
+                    <div class="game-info-board" id="temp">
+                        <div class="players">
+                            <span class="player-1">Dev</span>
+                            <span class="vs">VS</span>
+                            <span class="player-2">AI✨</span>
+                        </div>
+                        <div class="board">
+                            <div class="current-turn">
+                                <div class="live-pointer">
+                                    <div class="pointer"></div>
+                                    <div class="pointer"></div>
+                                </div>
+                                <span class="p1">Dev</span>
+                                <span class="dot"></span>
+                                <span class="p2">AI✨</span>
+                                <div class="box-heading">
+                                    Current Turn
+                                </div>
+                            </div>
+                            <div class="winner">
+                                <div class="winner-heading">
+                                    WINNER
+                                </div>
+                                <div class="winner-name">
+                                    ?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-button">
+                            <button>
+                                Start
+                            </button>
+                            <button>
+                                Restart
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
