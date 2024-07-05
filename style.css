@@ -94,7 +94,7 @@ h2.game-name{
 }
 .players{
     background-color: white;
-    border-radius: 7px;
+    border-radius: 7px 7px 0px 0px;
     text-align: center;
     font-size: 2.5vw;
     padding: 7px 5px;
@@ -110,13 +110,12 @@ h2.game-name{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .board{
-    margin-top: 10px;
+    margin-top:px;
     background-color: white;
-    border-radius: 15px 15px 0px 0px;
 }
 .current-turn{
     padding: 10px;
-    border-radius: 15px;
+    /* border-radius: 0px 0px 15px 15px; */
     box-shadow: inset 0.5px 0.5px 7px black;
     width: 100%;
 }
@@ -146,7 +145,7 @@ h2.game-name{
     display: grid;
     column-gap: 5px;
     align-items: center;
-    grid-template-columns: auto 6px auto;
+    grid-template-columns: 1fr 0.01fr 1fr;
 }
 .dot{
     border-radius: 50%;
@@ -156,11 +155,19 @@ h2.game-name{
     background: linear-gradient(to right,#18CFFF,#B205FF);
 }
 .p1 , .p2{
-    border:2px double rgb(0, 255, 21);
+    border:5px double #18CFFF;
     border-radius: 20px;
     padding: 5px 0px;
     text-align: center;
     font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.player-symbol{
+    font-weight: 900;
+    color: #B205FF;
+    margin-left:5px ;
+    padding-left: 7px;
+    border-left: 4px double #18CFFF;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .current-turn-text{
     margin: 13px 3px 0px 3px;
@@ -184,6 +191,7 @@ h2.game-name{
 }
 .winner-name{
     padding: 15px;
+    font-size: 100px;
 }
 .game-button{
     margin-top: 2px;
