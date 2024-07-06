@@ -46,8 +46,8 @@ h2.game-name{
     box-shadow: 0px 0px 10px rgb(195, 195, 195);
     font-weight: 600;
 }
-.mode-button:hover{
-
+.mode-selected{
+    box-shadow: 0px 0px 5px 2px #18CFFF , inset 0px 0px 2px 2px white;
 }
 .mode-button:active{
     box-shadow:inset 0px 0px 3px rgb(83, 83, 83);
@@ -73,20 +73,25 @@ h2.game-name{
     height: 100%;
     background-color: white;
 }
-.box:hover{
-    box-shadow: 0px 0px 5px black;
-}
-#box1{
+.box:nth-child(1){
     border-top-left-radius: 7px;
 }
-#box3{
+.box:nth-child(3){
     border-top-right-radius: 7px;
 }
-#box7{
+.box:nth-child(7){
     border-bottom-left-radius: 7px;
 }
-#box9{
+.box:nth-child(9){
     border-bottom-right-radius: 7px;
+}
+.box img{
+    margin: 7.5%;
+    width: 85%;
+    height: 85%;
+}
+.box:hover{
+    box-shadow: 0px 0px 5px black;
 }
 .game-info-board{
     width: 75%;

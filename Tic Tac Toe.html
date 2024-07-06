@@ -17,22 +17,22 @@
     </header>
     <main>
         <section class="game-modes">
-            <button class="mode-button" id="two-player-mode">2 Player</button>
-            <button class="mode-button" id="play-with-ai-mode">Play with AI✨</button>
+            <button class="mode-button mode-selected" id="two-player-mode" value="two-player-mode" onclick="select_game_mode(this)">2 Player</button>
+            <button class="mode-button" id="ai-mode" value="ai-mode" onclick="select_game_mode(this)">Play with AI✨</button>
         </section>
         <section>
             <div class="game-div">
                 <div class="game-unit">
                     <div class="tic-tac-toe-3x3">
-                        <img src="./images/blank.png" class="box" id="box1"/>
-                        <img src="./images/blank.png" class="box" id="box2"/>
-                        <img src="./images/blank.png" class="box" id="box3"/>
-                        <img src="./images/blank.png" class="box" id="box4"/>
-                        <img src="./images/blank.png" class="box" id="box5"/>
-                        <img src="./images/blank.png" class="box" id="box6"/>
-                        <img src="./images/blank.png" class="box" id="box7"/>
-                        <img src="./images/blank.png" class="box" id="box8"/>
-                        <img src="./images/blank.png" class="box" id="box9"/>
+                        <div  class="box"><img src="./images/blank.png" id="box11"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box12"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box13"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box21"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box22"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box23"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box31"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box32"/></div>
+                        <div  class="box"><img src="./images/blank.png" id="box33"/></div>
                     </div>
                     <div class="game-info-board" id="temp">
                         <div class="players">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="game-button">
-                            <button class="start-button">
+                            <button class="start-button" onclick="start_game()">
                                 Start
                             </button>
                             <button class="restart-button">
