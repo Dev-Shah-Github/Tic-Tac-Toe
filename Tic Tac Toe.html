@@ -36,9 +36,9 @@
                     </div>
                     <div class="game-info-board" id="temp">
                         <div class="players">
-                            <span class="player-1">Dev</span>
+                            <span class="player-1" id="player-1-name">Player-1</span>
                             <span class="vs">VS</span>
-                            <span class="player-2">AI✨</span>
+                            <span class="player-2" id="player-2-name">Player-2</span>
                         </div>
                         <div class="board">
                             <div class="current-turn" id="live-player-box">
@@ -47,9 +47,9 @@
                                     <img src="./images/pointer arrow.png" class="pointer" id="pointer-p2"></img>
                                 </div>
                                 <div class="p1-dot-p2">
-                                    <span class="p1">Dev <span class="player-symbol">O</span></span>
+                                    <span class="p1"><span id="p1-name">P1</span><span class="player-symbol">O</span></span>
                                     <span class="dot"></span>
-                                    <span class="p2">AI <span class="player-symbol">X</span>
+                                    <span class="p2"><span id="p2-name">P2</span> <span class="player-symbol">X</span>
                                 </div>
                                 <div class="current-turn-text" id="game-status">
                                     Current Turn
@@ -59,7 +59,7 @@
                                 <div class="winner-heading">
                                     WINNER
                                 </div>
-                                <div class="winner-name">
+                                <div class="winner-name" id="winner">
                                     ?
                                 </div>
                             </div>
@@ -68,7 +68,7 @@
                             <!-- <button class="start-button" onclick="start_game()">
                                 Start
                             </button> -->
-                            <button class="restart-button" onclick="restart_game()">
+                            <button class="restart-button" onclick="start_game()">
                                 Restart
                             </button>
                         </div>
