@@ -200,19 +200,22 @@ h2.game-name{
 }
 .game-button{
     margin-top: 2px;
-    display: grid;
-    column-gap: 2px;
-    grid-template-columns: auto auto;
+    
+    /* display: grid; */
+    /* column-gap: 2px; */
+    /* grid-template-columns: auto auto; */
 }
 .game-button button{
+    width: 100%;
     padding: 7px;
     background: white;
     border:none;
 }
-.game-button button.start-button{
+/* .game-button button.start-button{
     border-bottom-left-radius: 15px;
-}
+} */
 .game-button button.restart-button{
+    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
