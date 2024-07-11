@@ -2,7 +2,10 @@ let game_mode = "two-player-mode";
 const O_src = "./images/circle.png";
 const X_src = "./images/cross.png";
 let player_1,player_2,encountered_moves,board,winner;
+
+
 start_game();
+
 
 function select_game_mode(mode){
     if(mode.value=="ai-mode"){
