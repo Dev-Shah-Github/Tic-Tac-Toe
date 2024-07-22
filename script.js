@@ -173,15 +173,15 @@ function possible_moves(){
 
 function minimax(depth,is_maximizing){
 
-    // It just Check and Count how many times minimax was called.
-    temp_count ++;
-    console.log(temp_count);
+    // // It just Check and Count how many times minimax was called.
+    // temp_count ++;
+    // console.log(temp_count);
 
-    // Only To see Behind the Scenes
-    console.log("------------------");
-    console.log(board[0]);
-    console.log(board[1]);
-    console.log(board[2]);
+    // // Only To see Behind the Scenes
+    // console.log("------------------");
+    // console.log(board[0]);
+    // console.log(board[1]);
+    // console.log(board[2]);
     
 
     if(check_win("X")){
