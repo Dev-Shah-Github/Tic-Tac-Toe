@@ -220,6 +220,33 @@ h2.game-name{
     border-bottom-right-radius: 7px;
 }
 
+footer{
+    background:linear-gradient(to right,#18CFFFdd,#B205FFdd);
+    border-radius: 20px 20px 0px 0px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.qr-code-sec{
+    display: flex;
+}
+.qr-code{
+    padding: 10px;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.qr-code img{
+    margin: auto;
+    max-width: 150px;
+    border-radius: 10px;
+}
+.qr-code span{
+    padding: 10px;
+}
+#legal-sec{
+}
+
 
 @media screen and (min-width:450px) {
     .game-unit{
